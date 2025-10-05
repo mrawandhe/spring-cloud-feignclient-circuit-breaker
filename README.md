@@ -11,3 +11,6 @@ public class Application {
 }
 
 ✅ Instead, move @EnableFeignClients to a dedicated configuration class to ensure compatibility with circuit breaker features like Resilience4j.
+
+Refer the below link:
+https://github.com/spring-cloud/spring-cloud-openfeign/issues/611

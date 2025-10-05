@@ -11,10 +11,10 @@
 	</parent>
 	
 	<groupId>com.example</groupId>
-	<artifactId>spring-cloud-fiegnclient-circuit-breaker</artifactId>
+	<artifactId>spring-cloud-feignclient-circuit-breaker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-fiegnclient-circuit-breaker</name>
-	<description>Spring Boot - Fiegn client - Circuit breaker demo</description>
+	<name>spring-cloud-feignclient-circuit-breaker</name>
+	<description>Spring Boot - Feign client - Circuit breaker demo</description>
 	<url />
 
 	<properties>
