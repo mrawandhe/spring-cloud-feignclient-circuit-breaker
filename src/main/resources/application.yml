@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+scan:
+  service:
+    url: http://localhost:8082
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      scan-service:
+        slidingWindowSize: 4
+        failureRateThreshold: 5
+        waitDurationInOpenState: 2s
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+
+feign:
+  circuitbreaker:
+  enabled: true
+
+# Optional logging  
+logging:
+  level:
+    com.example: DEBUG
+    io.github.resilience4j.retry: DEBUG
+    feign: DEBUG		
+
+
